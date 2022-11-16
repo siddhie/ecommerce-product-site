@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+  margin: 0rem 10rem;
+  color: hsl(219, 9%, 45%);
+}
+
+.logo__main {
+  margin: 2.5rem 0;
+}
+.logo__main:hover {
+  cursor: pointer;
+}
+
+.Menubar__lists {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu__list {
+  list-style: none;
+  padding: 2.5rem 0rem;
+  margin-bottom: 4px;
+}
+
+.menu__list:hover {
+  cursor: pointer;
+  border-bottom: 4px solid hsl(26, 100%, 55%);
+  margin-bottom: 0;
+}
+
+.navbar__part-1,
+.navbar__part-2 {
+  align-items: center;
+
+  gap: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.avatar:hover {
+  cursor: pointer;
+  border: 3px solid hsl(26, 100%, 55%);
+  padding: 0;
+}
+
+.cart:hover {
+  cursor: pointer;
+}
