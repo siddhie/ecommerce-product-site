@@ -25,16 +25,33 @@
 .small__product_image {
   width: 5rem;
   height: 5rem;
-  border: 2px solid black;
+  position: relative;
   border-radius: 10px;
-  background-color: red;
+  background-color: hsl(26, 100%, 55%);
 }
 
-/* .small__product_image:hover {
-} */
+.small__product_image:hover {
+  /* border: 3px solid hsl(26, 100%, 55%); */
+  cursor: pointer;
+}
 .small__image {
   border-radius: 10px;
   width: 100%;
   height: auto;
   max-width: 100%;
+}
+
+.hover__white {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+
+  z-index: 1;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.hover__white:hover {
+  background-color: hsla(230, 60%, 98%, 0.493);
+  border: 3px solid hsl(26, 100%, 55%);
 }
