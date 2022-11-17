@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ appear, update }) {
   return (
     <nav className="navbar">
       <div className="navbar__part-1">
@@ -22,6 +22,7 @@ export default function Navbar() {
       <div className="navbar__part-2">
         <div className="navbar__cart">
           <img className="cart" src="images/icon-cart.svg" alt="cart__icon" />
+          {appear && <div className="product__number__design">{update}</div>}
         </div>
         <div className="navbar__profile">
           <img

@@ -1,0 +1,121 @@
+.main__section {
+  display: flex;
+  flex-direction: row;
+  margin: 4.5rem 13rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7rem;
+}
+.sneaker__company {
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.para__design {
+  color: hsl(219, 9%, 45%);
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+.title__shoes {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  padding-right: 5rem;
+}
+.discount__price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.price__display {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.discount__tag {
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  background-color: hsla(26, 100%, 55%, 0.163);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+.actual__price {
+  color: hsl(220, 14%, 75%);
+  font-weight: 700;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+.add_to_cart_section {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.number_of_products {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  font-weight: 700;
+  background-color: hsl(223, 64%, 98%);
+  padding: 1rem 0rem;
+  border-radius: 10px;
+  align-items: center;
+}
+.decrease,
+.increase {
+  color: hsl(26, 100%, 55%);
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.addto_cart__btn {
+  display: flex;
+  align-items: center;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  gap: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.cart__white {
+  size: 0.5rem;
+}
+.addto_cart__btn_hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.addto_cart__btn_hover:hover {
+  background-color: hsla(230, 60%, 98%, 0.249);
+}
+.plus__minus__hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.plus__minus__hover:hover {
+  background-color: hsla(230, 60%, 98%, 0.331);
+}

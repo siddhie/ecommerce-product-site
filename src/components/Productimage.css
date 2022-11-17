@@ -1,11 +1,3 @@
-.main__section {
-  display: flex;
-  flex-direction: row;
-  margin: 4.5rem 13rem;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .Image__Product_section {
   display: flex;
   gap: 1.5rem;

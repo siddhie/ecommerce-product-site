@@ -55,4 +55,21 @@
 
 .cart:hover {
   cursor: pointer;
+  /* background-image: url("../../public/images/icon-cart-white.svg"); */
+}
+
+.navbar__cart {
+  position: relative;
+}
+.product__number__design {
+  left: 0.8rem;
+  top: -7px;
+
+  position: absolute;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  font-weight: 700;
+  padding: 0.1rem 0.5rem;
+  border-radius: 40px;
+  font-size: 0.7rem;
 }

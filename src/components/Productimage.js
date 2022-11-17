@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "./Productimage.css";
 
 export default function Productimage() {
