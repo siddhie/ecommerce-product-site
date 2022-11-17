@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar update={update} appear={appear} handleHover={handleHover} />
+      <Navbar update={update} appear={appear} />
 
       <main className="main__section">
         <Productimage />
