@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 
-export default function Navbar({ appear, update }) {
+export default function Navbar({
+  appear,
+  update,
+  handleMouseEnter,
+  showcartDetails,
+  handleMouseLeave,
+}) {
   return (
     <nav className="navbar">
       <div className="navbar__part-1">
@@ -21,8 +27,26 @@ export default function Navbar({ appear, update }) {
 
       <div className="navbar__part-2">
         <div className="navbar__cart">
-          <img className="cart" src="images/icon-cart.svg" alt="cart__icon" />
+          <img
+            onMouseEnter={() => handleMouseEnter()}
+            onMouseLeave={() => handleMouseLeave()}
+            className="cart"
+            src="images/icon-cart.svg"
+            alt="cart__icon"
+          />
           {appear && <div className="product__number__design">{update}</div>}
+
+          {showcartDetails && (
+            <div className="cart__details__box">
+              <p className="cart__title"> Cart </p>
+              <hr className="hr" />
+
+              <div className="checkout">
+                <div className="checkout__details">details</div>
+                {/* <div className="cart__empty"> Your cart is empty. </div> */}
+              </div>
+            </div>
+          )}
         </div>
         <div className="navbar__profile">
           <img

@@ -8,19 +8,37 @@ function App() {
   const [count, setCount] = useState(0);
   const [appear, setAppear] = useState(false);
   const [update, setUpdate] = useState(0);
+  const [showcartDetails, setshowcartDetails] = useState(false);
 
   function updateNumber() {
+    setUpdate(count);
     if (count > 0) {
       setAppear(true);
-      setUpdate(count);
     } else {
       setAppear(false);
     }
   }
 
+  function handleMouseEnter() {
+    console.log("mouse enter");
+
+    if (update <= 0) {
+      setshowcartDetails(true);
+    }
+  }
+
+  function handleMouseLeave() {
+    setshowcartDetails(false);
+  }
   return (
     <div className="App">
-      <Navbar update={update} appear={appear} />
+      <Navbar
+        update={update}
+        appear={appear}
+        handleMouseEnter={handleMouseEnter}
+        showcartDetails={showcartDetails}
+        handleMouseLeave={handleMouseLeave}
+      />
 
       <main className="main__section">
         <Productimage />
