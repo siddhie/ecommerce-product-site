@@ -9,6 +9,7 @@ function App() {
   const [appear, setAppear] = useState(false);
   const [update, setUpdate] = useState(0);
   const [showcartDetails, setshowcartDetails] = useState(false);
+  const [showCheckoutDetails, setshowCheckoutDetails] = useState(false);
 
   function updateNumber() {
     setUpdate(count);
@@ -20,10 +21,12 @@ function App() {
   }
 
   function handleMouseEnter() {
-    console.log("mouse enter");
+    setshowcartDetails(true);
 
-    if (update <= 0) {
-      setshowcartDetails(true);
+    if (update > 0) {
+      setshowCheckoutDetails(true);
+    } else {
+      setshowCheckoutDetails(false);
     }
   }
 
@@ -38,6 +41,7 @@ function App() {
         handleMouseEnter={handleMouseEnter}
         showcartDetails={showcartDetails}
         handleMouseLeave={handleMouseLeave}
+        showCheckoutDetails={showCheckoutDetails}
       />
 
       <main className="main__section">

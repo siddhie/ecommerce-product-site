@@ -64,7 +64,7 @@
 .product__number__design {
   left: 0.8rem;
   top: -7px;
-
+  cursor: pointer;
   position: absolute;
   background-color: hsl(26, 100%, 55%);
   color: white;
@@ -78,8 +78,8 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   position: absolute;
   background-color: white;
-  width: 18rem;
-  height: 11rem;
+  width: 19rem;
+  height: 12rem;
   border-radius: 10px;
   left: -8rem;
   top: 3rem;
@@ -108,4 +108,45 @@
 }
 .cart__empty {
   font-weight: 700;
+}
+.cart__detail__image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 5px;
+}
+.if_cart_has_something {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+  /* gap: 2rem; */
+}
+.fall__limited {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+.delete__icon {
+  cursor: pointer;
+}
+.checkout__btn {
+  padding: 0.9rem 1rem;
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.checkout__details {
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+}
+.bold_span {
+  color: black;
+  font-weight: 700;
+  margin-left: 0.1rem;
 }

@@ -7,6 +7,7 @@ export default function Navbar({
   handleMouseEnter,
   showcartDetails,
   handleMouseLeave,
+  showCheckoutDetails,
 }) {
   return (
     <nav className="navbar">
@@ -26,14 +27,12 @@ export default function Navbar({
       </div>
 
       <div className="navbar__part-2">
-        <div className="navbar__cart">
-          <img
-            onMouseEnter={() => handleMouseEnter()}
-            onMouseLeave={() => handleMouseLeave()}
-            className="cart"
-            src="images/icon-cart.svg"
-            alt="cart__icon"
-          />
+        <div
+          onMouseEnter={() => handleMouseEnter()}
+          onMouseLeave={() => handleMouseLeave()}
+          className="navbar__cart"
+        >
+          <img className="cart" src="images/icon-cart.svg" alt="cart__icon" />
           {appear && <div className="product__number__design">{update}</div>}
 
           {showcartDetails && (
@@ -42,8 +41,33 @@ export default function Navbar({
               <hr className="hr" />
 
               <div className="checkout">
-                <div className="checkout__details">details</div>
-                {/* <div className="cart__empty"> Your cart is empty. </div> */}
+                {showCheckoutDetails ? (
+                  <div className="checkout__details">
+                    <div className="if_cart_has_something">
+                      <img
+                        src="images\image-product-1-thumbnail.jpg"
+                        className="cart__detail__image"
+                      />
+
+                      <div className="cart__pricing_details">
+                        <p className="fall__limited">
+                          Fall Limited Edition Sneakers
+                        </p>
+                        <p className="total">
+                          $125.00 x {update}
+                          <span className="bold_span"> ${125 * update}.00</span>
+                        </p>
+                      </div>
+
+                      <div className="delete__icon">
+                        <i class="uil uil-trash-alt"></i>{" "}
+                      </div>
+                    </div>
+                    <button className="checkout__btn">Checkout</button>
+                  </div>
+                ) : (
+                  <div className="cart__empty"> Your cart is empty. </div>
+                )}
               </div>
             </div>
           )}
