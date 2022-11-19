@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BigImage from "./components/BigImage";
 import Navbar from "./components/Navbar";
 import "./components/Productdes.css";
 
@@ -35,6 +36,7 @@ function App() {
   }
   return (
     <div className="App">
+      {/* <BigImage /> */}
       <Navbar
         update={update}
         appear={appear}
